@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sbg_backgroundColor="#fffffF"
+        app:sbg_dividerColor="@color/colorPrimary"
+        app:sbg_dividerSize="2dp"
+        app:sbg_position="1"
+        app:sbg_radius="20dp"
+        app:sbg_selectorColor="#BA68C8"
+        app:sbg_selectorTextColor="#ffffff"
+        app:sbg_shadow="true"
+        app:sbg_shadowElevation="3dp"
+        app:sbg_shadowMargin="4dp"
+        android:layout_gravity="center"
+        android:id="@+id/sbg_candidate_filter"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:text="Status"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:text="Recruiter"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:text="Job"
+            android:textAllCaps="false" />
+
+
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select Sub-filter"
+        android:textStyle="bold"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_candidate_sub_filter">
+
+    </ListView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Filter"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_apply_filter_button"
+        android:id="@+id/bt_candidate_apply_filter"/>
+
+</LinearLayout>

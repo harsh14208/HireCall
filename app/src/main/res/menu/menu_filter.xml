@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filters"
+        android:icon="@drawable/filter_icon"
+        app:showAsAction="always"
+        android:title="filter">
+        <menu>
+            <item
+                android:id="@+id/time_filter"
+                android:title="Filter By Time"/>
+            <item
+                android:id="@+id/job_filter"
+                android:title="Filter by Job"/>
+            <item
+                android:id="@+id/company_filter"
+                android:title="Filter by Company"/>
+        </menu>
+    </item>
+
+</menu>

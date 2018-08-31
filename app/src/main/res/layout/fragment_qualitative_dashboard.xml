@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Stats"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/DuplicatesfromSourced"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_grey"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Duplicates from Sourced"
+                        android:textColor="@color/md_blue_A700"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/bar_chart1"
+                        android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart1"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ProcessedfromInteracted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_grey"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Processed from Interacted"
+                        android:textColor="@color/md_blue_A700"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="210dp"
+                        android:id="@+id/bar_chart2"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart2"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+                </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ShortlistedfromProcessed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_grey"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Shortlisted from Processed"
+                        android:textColor="@color/md_blue_A700"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/bar_chart3"
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart3"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/AttendedfromShortlisted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_grey"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Attended from Shortlisted"
+                        android:textColor="@color/md_blue_A700"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/bar_chart4"
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart4"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/OfferedfromAttended"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_grey"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Offered from Attended"
+                        android:textColor="@color/md_blue_A700"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/bar_chart5"
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart5"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/JoinedfromOffered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Joined from Offered"
+                android:textColor="@color/md_blue_A700"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart6"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"></com.github.mikephil.charting.charts.BarChart>
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart6"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"></com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

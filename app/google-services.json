@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "44473246990",
+    "firebase_url": "https://hirecall-5bbea.firebaseio.com",
+    "project_id": "hirecall-5bbea",
+    "storage_bucket": "hirecall-5bbea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44473246990:android:a30dce06c9d064cb",
+        "android_client_info": {
+          "package_name": "app.com.thetechnocafe.hirecall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44473246990-i9vofbmr4bkmm9itq1pqfrk5lc65345q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByob1m345qmI5_igIyELpTfjTAUJu9TAs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

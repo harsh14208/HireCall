@@ -1,0 +1,321 @@
+<resources>
+    <string name="api_key_google">AIzaSyCuZLIX-NAo_r_f2JLCVstkTXzsmssPh1A</string>
+    <string name="app_name">HireCall</string>
+    <string name="sign_in">SignIn</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup">SignUp</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="uid">Email</string>
+    <string name="password">Password</string>
+    <string name="primary_skill">Primary Skill</string>
+    <string name="job_location_area">Job Location(Area)</string>
+    <string name="job_location_city">Job Location(City)</string>
+    <string name="invite_colleague">Invite/Add Colleague mail ID</string>
+    <string name="create_job">Create Job</string>
+    <string name="min_expense">Min Experience</string>
+    <string name="max_expense">Max Experience</string>
+    <string name="client_name">Client Name</string>
+    <string name="other_client_name">Enter Other Client Name</string>
+    <string name="other_primary_skill">Enter Other Primary Skill</string>
+    <string name="archive">Archive</string>
+    <string name="unknown">Unknown</string>
+    <string name="please_select_a_reason">Please select a reason.</string>
+    <string name="please_select_an_option">Please select an option.</string>
+    <string name="unarchive">Unarchive</string>
+    <string-array name="home_options">
+        <item>Tasks</item>
+        <item>Chat</item>
+        <item>Candidates</item>
+    </string-array>
+    <string-array name="job_details_options">
+        <item>Dial a Number</item>
+        <item>Call History</item>
+    </string-array>
+    <string-array name="feedback_options">
+        <item>Attended</item>
+        <item>Call Missed</item>
+    </string-array>
+    <string-array name="jobs_options">
+        <item>Active</item>
+        <item>Archived</item>
+    </string-array>
+    <string-array name="all_job_options">
+        <item>All</item>
+        <item>Created</item>
+        <item>Invited</item>
+    </string-array>
+
+    <string-array name="filter">
+        <item>Select Filter</item>
+        <item>Time</item>
+        <item>Company</item>
+        <item>Job</item>
+    </string-array>
+    <string-array name="date_filter1">
+        <item>Select Filter</item>
+        <item>Filter by Week</item>
+        <item>Filter by Month</item>
+        <item>Filter by Quarter</item>
+        <item>Filter by Biyearly</item>
+        <item>Filter by Year </item>
+    </string-array>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>Feburary</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="call_purpose">
+        <item>Select the purpose of Call</item>
+        <item>Introductory Call</item>
+        <item>Shortlist Confirmation Call</item>
+        <item>Interview Confirmation Call</item>
+        <item>Pre Interview Follow Up Call</item>
+        <item>Post Interview Call</item>
+        <item>Offer Call</item>
+        <item>Post Offer Call</item>
+    </string-array>
+    <string-array name="preferred_companies">
+        <item>Select Preferred Companies</item>
+        <item>MNCs</item>
+        <item>StartUps</item>
+        <item>ProductFirms</item>
+        <item>StartUps/ProductFirms</item>
+        <item>E-commerce</item>
+        <item>AI/BigData</item>
+        <item>Fintech</item>
+        <item>InvestmentBanking</item>
+        <item>Financial</item>
+        <item>Banking</item>
+        <item>SemiConductor</item>
+        <item>Aerospace</item>
+        <item>Manufacturing</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="not_interested_options">
+        <item>Select a Reason</item>
+        <item>Location Mismatch</item>
+        <item>Domain Mismatch</item>
+        <item>Company Mismatch</item>
+        <item>Already processed</item>
+        <item>Role Mismatch</item>
+        <item>Skill Mismatch</item>
+        <item> Not Interested for Contractual Role</item>
+        <item>Looking for only Onsite/Abroad</item>
+        <item>Happy with current Role</item>
+        <item>Recently Joined new firm</item>
+        <item>Not Interested with Startup</item>
+        <item>Interested only with Startups</item>
+        <item>Technically not strong</item>
+        <item>Very high CTC Expectations</item>
+        <item>Bad reviews in Glass Door</item>
+        <item>Bad reviews from personal network</item>
+        <item>Founders are not great</item>
+        <item>Tech team is not great</item>
+        <item>Got another offer</item>
+        <item>Current firm offered better role</item>
+        <item>Current firm offered better CTC</item>
+        <item>Bad Reviews from personal network</item>
+        <item>Other Reasons</item>
+    </string-array>
+
+    <string-array name="domain">
+        <item>Select a Domain</item>
+        <item>Ecommerce</item>
+        <item>BPO/KPO</item>
+        <item>Insurance</item>
+        <item>Travel</item>
+        <item>Advertisement</item>
+        <item>Fashion</item>
+        <item>Automobile</item>
+        <item>Retail</item>
+        <item>SaaS</item>
+        <item>AI/Bigdata/Iot</item>
+        <item>FinTech</item>
+        <item>Edutech</item>
+        <item>Cloud</item>
+        <item>Banking</item>
+        <item>Finance</item>
+        <item>Investment Banking</item>
+        <item>Aerospace</item>
+        <item>Semi Conductor</item>
+        <item>Pharma</item>
+        <item>HealthCare</item>
+    </string-array>
+
+    <string-array name="roles">
+        <item>Select Preferred Role</item>
+        <item>Android Developer</item>
+        <item>Admin</item>
+        <item>DWH/ETL</item>
+        <item>Business Intelligence</item>
+        <item>Tester</item>
+        <item>Manual Testing</item>
+        <item>Automation Testing</item>
+        <item>Devops</item>
+        <item>Security Engineer</item>
+        <item>BigData Engineer</item>
+        <item>Cloud Engineer</item>
+        <item>Architect</item>
+        <item>UX Engineer</item>
+        <item>UI Designer</item>
+        <item>UI Developer</item>
+        <item>FullStack</item>
+        <item>Ios Developer</item>
+        <item>Backend Engineer</item>
+        <item>Digital Marketing</item>
+        <item>Trainer</item>
+        <item>Financial Analyst</item>
+        <item>Data Analyst</item>
+        <item>Data Scientist</item>
+        <item>Business Analyst</item>
+        <item>Sales</item>
+        <item>TeleCaller</item>
+        <item>Recruiter</item>
+        <item>Business Development</item>
+        <item>Business Analyst</item>
+        <item>Product Manager</item>
+        <item> Project Manager</item>
+        <item>Team Lead</item>
+    </string-array>
+
+    <string-array name="skill">
+        <item>Select skills</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>R</item>
+        <item>RoR</item>
+        <item>Scala</item>
+        <item>Go</item>
+        <item>Nodejs</item>
+        <item>Angularjs</item>
+        <item>MEAN</item>
+        <item>MERN</item>
+        <item>Analyst</item>
+        <item>.NET</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Asp.net</item>
+        <item>Azure</item>
+        <item>AWS</item>
+        <item>PHP</item>
+    </string-array>
+
+    <string-array name="company">
+        <item>Select company</item>
+        <item>Amazon</item>
+        <item>Flipkart</item>
+        <item>Google</item>
+        <item>Facebok</item>
+        <item>Yahoo</item>
+        <item>TCS</item>
+        <item>Wipro</item>
+        <item>Cognizant</item>
+        <item>Deloitte</item>
+        <item>MetLife</item>
+        <item>Cloudify</item>
+    </string-array>
+    <string-array name="call_types">
+        <item>Select Type of Call</item>
+        <item>Introductory Call</item>
+        <item>Shortlist Confirmation Call</item>
+        <item>Interview Confirmation Call</item>
+        <item>Pre Interview Follow UP Call</item>
+        <item>Post Interview Call</item>
+        <item>Offer Call</item>
+        <item>Post Offer Call</item>
+    </string-array>
+
+    <string-array name="no_show_options">
+        <item>Select reason</item>
+        <item>Not Well</item>
+        <item>Got stuck in traffic</item>
+        <item>Car/Bike Punctured</item>
+        <item>Candidate met with accident</item>
+        <item>Friend met with accident</item>
+        <item>Close family member not well</item>
+        <item>Close family member died</item>
+        <item>Friend’s Marriage</item>
+        <item>Relative’s Marriage</item>
+        <item>Urgent Client Call</item>
+        <item>Other Reasons</item>
+    </string-array>
+
+    <string-array name="interview_select_options">
+        <item>Select selection round</item>
+        <item>Tcon Select</item>
+        <item>Coding Select</item>
+        <item>1st Round Select</item>
+        <item>2nd Round Select</item>
+        <item>3rd Round Select</item>
+        <item>4th Round Select</item>
+        <item>5th Round Select</item>
+        <item>6th Round Select</item>
+        <item>7th Round Select</item>
+        <item>Final Round Select</item>
+    </string-array>
+    <string-array name="interview_reject_options">
+        <item>Select rejection round</item>
+        <item>Tcon Reject</item>
+        <item>Coding Reject</item>
+        <item>1st Round Reject</item>
+        <item>2nd Round Reject</item>
+        <item>3rd Round Reject</item>
+        <item>4th Round Reject</item>
+        <item>5th Round Reject</item>
+        <item>6th Round Reject</item>
+        <item>7th Round Reject</item>
+        <item>Final Round Reject</item>
+    </string-array>
+    <string-array name="confirmation_round">
+        <item>Select round</item>
+        <item>Tcon</item>
+        <item>Coding Round</item>
+        <item>1st Round</item>
+        <item>2nd Round</item>
+        <item>3rd Round</item>
+        <item>4th Round</item>
+        <item>5th Round</item>
+        <item>6th Round</item>
+        <item>7th Round</item>
+        <item>Final Round</item>
+    </string-array>
+    <string-array name="time_values">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="job_type_options">
+        <item>All</item>
+        <item>Created Jobs</item>
+        <item>Invited Jobs</item>
+    </string-array>
+    <string name="title_activity_feedback_history">FeedbackHistoryActivity</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="todo_type_options">
+        <item>All</item>
+        <item>Done</item>
+        <item>Todo</item>
+    </string-array>
+    <string-array name="dashboard_options">
+        <item>Calls</item>
+        <item>Qualitative</item>
+        <item>Analysis</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

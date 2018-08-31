@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!--
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/city_text_input_candidate_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Enter Candidate Name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/city_text_input_edit_text_candidate_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+        -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/city_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Enter Candidate Area">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/city_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cb_feedback_notice_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Candidate Serving Notice Period"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/city_text_input_layout_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Notice Period(In Days)"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/city_text_input_edit_text_experience"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.30"
+        android:text="Rate Candidate’s Attitude"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RatingBar
+            android:id="@+id/candidate_attitude_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="How keen is the Candidate for this Opportunity?"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RatingBar
+            android:id="@+id/candidate_interest_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="48dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/attitude_rating_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add comments if any"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/interest_rating_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add comments if any"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/client_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client : Amazon"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/asked_to_call_later_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asked to call Later" />
+
+                <LinearLayout
+                    android:id="@+id/time_picker_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/date_picker_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/background_button_blue"
+                        android:text="Pick Date"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/time_picker_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/background_button_blue"
+                        android:text="Pick Time"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/candidate_interested_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidate is Interested" />
+
+                <EditText
+                    android:id="@+id/add_comments_interested_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add comments if any"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/candidate_interested_unavailable_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidate is Interested but Unavailable" />
+
+
+                <LinearLayout
+                    android:id="@+id/time_picker_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/date_picker_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/background_button_blue"
+                        android:text="Pick Date"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/time_picker_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/background_button_blue"
+                        android:text="Pick Time"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+                <RadioButton
+                    android:id="@+id/candidate_not_interested_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidate not Interested/Suitable" />
+
+                <Spinner
+                    android:id="@+id/not_interested_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/reasons_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/preference_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

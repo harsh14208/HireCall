@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:text="Rate Candidate’s Attitude"
+            android:layout_weight="0.30"
+            android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <RatingBar
+            android:id="@+id/candidate_attitude_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.1" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textAlignment="center"
+            android:text="Are you sure he will attend the interview?"
+            />
+        <LinearLayout
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <RatingBar
+                android:id="@+id/candidate_interview_attend_possibilit3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.1"/>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:text="Do you think he will clear the Interview?"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+            <RatingBar
+                android:id="@+id/candidate_interview_attend_possibility2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.1" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="48dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/attitude_rating_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add comments if any"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/interest_rating_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add comments if any"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/interview_attend_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add comments if any"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/client_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client : Amazon"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/asked_to_call_later_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asked to call Later" />
+
+            <LinearLayout
+                android:id="@+id/time_picker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/date_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Date"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/time_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Time"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/candidate_confirmed_availability_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Confirmed his availability" />
+
+            <Spinner
+                android:id="@+id/confirmed_availability_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/confirmation_time_picker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/confirmation_date_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Date"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/confirmation_time_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Time"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/candidate_requested_reschedule_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candidate Requested for Reschedule" />
+
+            <LinearLayout
+                android:id="@+id/reschedule_time_picker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/reschedule_date_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Date"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/reschedule_time_picker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="Pick Time"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/candidate_not_interested_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate not Interested" />
+
+            <Spinner
+                android:id="@+id/not_interested_spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/reasons_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone" />
+            <Spinner
+                android:id="@+id/preference_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/add_comments_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="top|left"
+            android:hint="Add Comments"
+            android:inputType="textShortMessage|textMultiLine"
+            android:lines="1" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

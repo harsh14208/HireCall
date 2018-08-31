@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_layout"
+        android:orientation="vertical">
+      <LinearLayout
+          android:id="@+id/filters1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/new_filter_candidate"
+             android:textSize="12dp"
+             android:textColor="@color/md_blue_900"
+             android:text="New"/>
+          <Button
+              android:id="@+id/screening_filter_candidate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12dp"
+              android:text="Screening"/>
+          <Button
+              android:id="@+id/ipending_filter_candidate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12dp"
+              android:text="Interview Pending"/>
+          <Button
+              android:id="@+id/more_filters"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="16dp"
+              android:text="..."/>
+
+
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/filters2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/less_filters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="..."/>
+            <Button
+                android:id="@+id/interviewed_filter_candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Interviewed"/>
+            <Button
+                android:id="@+id/offered_filter_candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Offered"/>
+            <Button
+                android:id="@+id/joined_filter_candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Joined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginRight="100dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/selectall_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/complete_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select all"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:id="@+id/status_layout"
+           android:layout_weight="0.27">
+           <ImageView
+               android:id="@+id/multiple_message_icon"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:tint="@color/md_black_1000"
+               android:paddingRight="2dp"
+               android:paddingTop="4dp"
+               android:src="@drawable/icon_email"/>
+           <ImageView
+               android:layout_width="22dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/filter"
+               android:id="@+id/iv_candidate_filter"
+               android:layout_gravity="center|end"
+               android:layout_marginLeft="16dp"
+               />
+
+           <Button
+                android:id="@+id/status_b"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="Add Status"/>
+            <Button
+                android:id="@+id/filter_b"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="10dp"
+                android:layout_marginRight="3dp"
+                android:text="Filter"
+                android:visibility="gone"/>
+
+
+       </LinearLayout>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/filtertext"
+                android:visibility="gone"
+                android:text="FilterText" />
+
+           
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/cand_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></Spinner>
+            <Spinner
+                android:id="@+id/cand_substatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></Spinner>
+            <Button
+                android:id="@+id/setstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="10dp"
+                android:text="Set"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/cand_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></Spinner>
+            <Spinner
+                android:id="@+id/cand_subfilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></Spinner>
+            <Button
+                android:id="@+id/setfilter"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="10dp"
+                android:text="Set"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+           <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_candidates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/farzi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="No Candidates Available" />
+    </LinearLayout>
+
+</ScrollView>

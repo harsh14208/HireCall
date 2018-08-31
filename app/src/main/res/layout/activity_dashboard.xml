@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            app:title="Dashboard">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/white">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/dashboard_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+        </Spinner>
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/dashboard_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone">
+    </Spinner>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/set_time_filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="set"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Set FIlter"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/filter2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="None"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/set_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textSize="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="end"
+            android:text="Current Week" />
+        <Button
+            android:id="@+id/time_filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/cardview_light_background"
+            android:layout_gravity="center_horizontal"
+            android:text="CHange Time FIlter"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
+

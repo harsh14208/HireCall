@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creating Domain"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:gravity="center_horizontal"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/et_dilaog_domain"
+            android:hint="Enter Domain"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/et_dilaog_name"
+            android:hint="Enter person Name"
+            android:layout_marginTop="@dimen/dimen_8dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="create_domain"
+            android:id="@+id/bt_dialog_create_domian"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
